@@ -1,0 +1,34 @@
+<section id="seccionguias" class=" altura-a-b ">            
+          <div class=" p-3 mb-5 bg-white rounded card cardguias bordegris mb-3 scrollflow -slide-top -opacity" style="max-width: 18rem;" *ngFor="let guia of guias">
+            <div id="contenedorgiratorio8" class="contenedorgiratorio">
+                <div class="contenedorprecioguias">
+                    <div class="precioguiasdigitales">
+                        <span class="etiquetaguiadigital badge badge-secondary">GUIA DIGITAL</span> 
+                    </div>  
+                    <div class="precioguiasindividual">
+                        <h6 class="">{{precio}}</h6>
+                    </div> 
+                </div>
+                <div class="card-body text-success">
+                    <h5 class="texto">{{guia.titulo}}</h5>
+                    <p class="texto"></p>
+                </div>
+                <div class="card-footer masinfo bg-transparent border-successf"> 
+                    <a id="botonguiaocho" class="botonguiaocho btn btn-primary" data-toggle="collapse" href="#collapseExampleuno" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Mas Info
+                    </a>
+                    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                    data-preference-id="40433146-2d8d44a4-54e2-4654-b4c2-99f429d6e4f8">
+                    </script>
+                </div> 
+                <div class="guiastrasera">
+                    <p>TEMAS DE LA GUIA <br>
+                    {{guia.descripcion}}
+                    </p>   
+                    <div class="volvergiratorio">
+                        <img class="backturner" src="img/back.png"  />  
+                    </div>
+                </div>
+             </div>
+        </div>
+</section>

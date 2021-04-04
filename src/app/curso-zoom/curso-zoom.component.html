@@ -1,0 +1,22 @@
+<section id="seccionzoom" class="altura-a-b ">  
+     <div class="card-group card-groupzoom scrollflow -slide-top -opacity" *ngFor="let curso of cursoZoom">      
+              <div class=" shadow p-3 mb-5 bg-white card" style="width: 16rem;">
+                     <span class="etiquetafechacurso fechazoom badge badge-secondary">{{dia}} de {{mes}}</span>
+                     <span class="etiquetazoomcurso badge badge-secondary">ZOOM    
+                             <img class="logozoom" src="../../assets/img/zoom.png" width="30" height="30" />
+                     </span>
+                     <div class="card-body titulo-curso-zoom">
+                            <h4 class="card-title">{{curso.titulo}}</h4>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                            <li class="list-group-item" *ngFor="let li of lis">
+                              <img src={{li.img}} width="15px" height="18px" />{{li.titulo}}
+                            </li>
+                     </ul>
+                     <a href="curso-distancia-dp.shtml" class="btn btn-primary masinfoweb">Mas Info</a>
+                     <div class="mpzoom">
+                     </div>
+              </div>
+       </div>       
+</section>
+

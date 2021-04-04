@@ -1,0 +1,33 @@
+<section id="seccionlibros" class=" altura-a-b ">           
+        <div class="cardlibro p-3 mb-5 bg-white rounded card mb-3 padding scrollflow -slide-top -opacity" style="max-width: 540px;" *ngFor="let libro of libros">
+            <div class="contenedorpreciolibros">
+                <div class="precioslibros">
+                <span class="etiquetaguiadigital badge badge-secondary">LIBRO DIGITAL     </span> 
+                </div> 
+                   <div class="preciolibroindividual">
+                      <h6 class="">
+                        {{libro.precio}}
+                      </h6>
+                   </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="{{libro.foto}}" class="card-img imagenlibro" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body botoneslibros">
+                      <h5 class="card-title">{{libro.titulo}}</h5> 
+                      <h6 class="card-title">{{libro.tipo}}</h6>  
+                      <p class="card-text"></p> 
+                    </div>
+                    <a href="librosnuevos.shtml" id="masinfolibrodigital" class="btn btn-primary" >Mas Info</a>
+                    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                    data-preference-id="40433146-2db8f907-fe69-4add-97f4-a6e9b214ee1f">
+                    </script>
+                </div>
+            </div>
+        </div>
+</section>
+
+                                   
+  

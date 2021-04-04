@@ -1,0 +1,63 @@
+#seccionservicios {
+  padding-bottom: 10%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.cardservicios {
+  display: flex;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 50px;
+  -webkit-box-shadow: -5px 5px 10px #111;
+  box-shadow: -5px 5px 10px #111;
+}
+
+.precioservicios {
+  font-style: oblique;
+}
+
+.svg {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+/*para que giren al apretar mas info*/
+.serviciosgiratorios {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background-color: white;
+  transition: all ease 0.8s;
+  transform-style: preserve-3d;
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.serviciosgiratorios.active {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.serviciostrasera {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  font-size: 13.5px;
+  font-weight: 1000;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  height: 100%;
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.front {
+  background-color: red;
+}
+
+.back {
+  background-color: green;
+}

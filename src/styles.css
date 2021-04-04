@@ -1,1 +1,662 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --Color-Mercado-Pago: rgb(1, 150, 247);
+  --Sombra: -5px 5px 15px #111;
+  --Color-Karina: darkgray;
+  --Color-Seccion-1: white;
+  --Color-Botones-Mas-Info: gray;
+  --Color-Fechas-Cursos: gray;
+  --Color-Side-Bar: #151719;
+  --Color-Boton-Side-Bar: #151719;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  /*font-family: 'IBM Plex Serif', serif;*/
+}
+.card-group span {
+  background-color: var(--Color-Fechas-Cursos);
+}
+
+#quienessomos {
+  cursor: pointer;
+}
+
+.logo {
+  padding: 10px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+/* SLIDEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEER*/
+
+.portada {
+  height: 100vh;
+
+  background: #4b79a1; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #283e51,
+    #4b79a1
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #283e51,
+    #4b79a1
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 100% 0% 100% 0% / 10% 72% 18% 100%;
+}
+
+.portada img {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-radius: 100% 0% 100% 0% / 0% 72% 28% 100%;
+  -webkit-box-shadow: 5px 5px 15px #111;
+  box-shadow: 5px 5px 15px #111;
+}
+
+.roww {
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.grid-item {
+  height: 50vh;
+  width: 100vw;
+}
+.divbotonesslider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 35px;
+  margin-top: 30px;
+  z-index: 100;
+}
+
+.botonesslider {
+  margin: 7px;
+  min-width: 210px;
+  border-style: solid;
+}
+
+.textoenslider {
+  z-index: 150;
+  color: var(--Color-Karina);
+  font-style: italic;
+  margin-top: 30px;
+  padding-left: 30px;
+}
+
+/*etiquetas de fechas de cursos zoom y web*/
+.etiquetafechacurso {
+  /*etiqueta gris con fecha de curso*/
+  font-size: 1.3rem;
+  padding: 4%;
+  -webkit-box-shadow: -5px 5px 10px #111;
+  box-shadow: -5px 5px 10px #111;
+}
+
+/*FIIIIIIIIIIIIIIN SERVICIOOOOOOOOOOOOOS*/
+
+.cajafija {
+  height: 31%;
+  float: left;
+  width: 3%;
+  text-align: center;
+  color: black;
+  position: fixed;
+  top: 25%;
+  display: none;
+  font-size: 100%;
+  font-weight: 800;
+  z-index: 600;
+} /*textos blancos fixed a los costados*/
+
+.cajafijatextonegro {
+  height: 31%;
+  float: left;
+  width: 3%;
+  text-align: center;
+  color: black;
+  position: fixed;
+  top: 25%;
+  display: none;
+  font-size: 100%;
+  font-weight: 800;
+  z-index: 600;
+} /*textos fixed a los costados*/
+
+/*GENERALEEEEEEEEEEEEEEEEEEEEEEEES*/
+
+/*Botones MAS INFO*/
+.btn {
+  border: 0px;
+  background-color: gray;
+  margin-bottom: 2%;
+}
+
+.card-header {
+  border: none;
+}
+
+/*FOOOOOOOOOOOOOOOOOOOOOOOOTER*/
+
+footer {
+  margin-top: 25px;
+  background-color: gainsboro;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.logoredes {
+  width: 25px;
+  margin: 10px 5px;
+}
+
+.detallepie {
+  float: right;
+  margin-right: 5%;
+  color: white;
+  height: 100%;
+  margin-top: 0.5%;
+  font-size: 1em;
+}
+
+#contacto {
+  width: auto;
+  height: auto;
+  display: flex;
+  float: right;
+  right: 1%;
+  bottom: 20px;
+  position: fixed;
+  z-index: 550;
+}
+
+#seccioncontacto {
+  position: fixed;
+  background-color: gainsboro;
+  z-index: 510;
+  width: 100%;
+  text-align: center;
+  display: none;
+  height: 50em;
+}
+
+.containercontacto {
+  text-align: center;
+}
+
+.ultimodiv {
+  text-align: center;
+}
+
+.botoncontactoenviardiv {
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.botoncontactoenviar {
+  width: 100%;
+  margin-top: 5%;
+}
+
+#extra {
+  font-style: italic;
+}
+
+#extra h3 {
+  padding-top: 2%;
+}
+
+/* MENUUUUUUU NAVVVVVV*/
+
+#menu {
+  background: #f1f1f1; /* color de la barra*/
+  color: #333; /*color de las tres barritas*/
+  height: 60px;
+  border-bottom: 1px solid #e9e9e9; /* borde inferior de la barra*/
+  box-shadow: 1px 2px 9px #c6c6c6; /* sombra inferior de la barra*/
+  width: 100%;
+  position: fixed;
+  z-index: 101;
+}
+
+#menu ul,
+#menu li {
+  padding: 0 0;
+  list-style: none;
+}
+
+#menu ul {
+  height: 45px;
+  width: 20%; /* ancho del menú, ajustar para centrarlo*/
+}
+
+#menu li {
+  float: left;
+  display: inline;
+  position: relative;
+  font: 11px Arial, sans-serif; /*tamaño y fuente del texto */
+}
+
+#menu a {
+  display: block;
+  line-height: 40px;
+  padding: 0 14px;
+  text-decoration: uppercase;
+  color: #333; /*color del texto*/
+  text-transform: uppercase; /*letras mayúsculas*/
+  letter-spacing: 1.5px; /*espacio entre letras*/
+}
+
+#menu li a:hover {
+  color: #000; /*color del texto al pasar el ratón*/
+  text-decoration: none;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  background: #e9e9e9; /*color del fondo de la categoria al pasar el ratón*/
+}
+
+#menu input {
+  display: none;
+  margin: 0 0;
+  padding: 0 0;
+  width: 80px;
+  height: 60px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#menu label {
+  font: 25px Arial, sans-serif;
+  font-weight: bold;
+  display: none;
+  width: 35px;
+  height: 55px;
+  line-height: 43px;
+  text-align: center;
+  margin-top: 0.5%;
+}
+
+#menu label span {
+  font: 16px Arial, sans-serif; /*tamaño y fuente del texto "menu" */
+  position: absolute;
+  left: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 42px;
+  letter-spacing: 0.5px;
+}
+
+#menu ul.menus {
+  height: auto;
+  overflow: hidden;
+  width: 170px;
+  background: #f1f1f1; /*color del fondo del submenu*/
+  position: absolute;
+  z-index: 99;
+  display: none;
+  border: 1px solid #e9e9e9;
+}
+
+#menu ul.menus li {
+  display: block;
+  width: 100%;
+  font: 11px Arial, sans-serif; /*tamaño y fuente del  texto del submenu*/
+  text-transform: uppercase;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+#menu ul.menus li:last-child {
+  border-bottom: none;
+}
+
+#menu ul.menus a {
+  color: #333; /*color del  texto del submenu*/
+  line-height: 35px;
+}
+
+#menu li:hover ul.menus {
+  display: block;
+}
+
+#menu ul.menus a:hover {
+  background: #e9e9e9; /*color del  fondo del submenu al pasar el ratón*/
+  color: #000; /*color del  texto del submenu al pasar el ratón*/
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+#menu ul {
+  background: #f1f1f1; /*color del desplegable del menu movil*/
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 3;
+  height: auto;
+  display: none;
+}
+
+#menu ul.menus {
+  width: 100%;
+  position: static;
+  padding-left: 20px;
+}
+
+#menu li {
+  display: block;
+  float: none;
+  width: auto;
+  font: 11px Arial, sans-serif;
+}
+
+#menu a {
+  display: block;
+  line-height: 40px;
+  padding: 0 14px; /*tamaño y fuente del  menu movil*/
+}
+
+#menu input,
+#menu label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+#menu input {
+  z-index: 4;
+}
+
+/* Etiquetas de cursos web una vez clickeadas individuales*/
+
+.filascursos {
+  display: flex;
+  background: #4b79a1; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #283e51,
+    #4b79a1
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #283e51,
+    #4b79a1
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+  align-content: center;
+  justify-content: center;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+.filascursosdos {
+  margin-top: 2%;
+}
+
+.fila {
+  align-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.cursosdistancia {
+  padding: 5%;
+}
+
+.cursosdistanciatres {
+  margin-top: 0;
+}
+
+.filascursos span {
+  margin-top: 2%;
+  padding: 3%;
+}
+
+.cursosdistanciacuatro {
+  padding: 0;
+}
+
+.botonpagomp {
+  margin-bottom: 15%;
+}
+
+.botonpagomp img {
+  width: 20%;
+}
+
+.botonpagomp2 img {
+  width: 20%;
+}
+
+/* Fin Etiquetas de cursos web una vez clickeadas individuales*/
+
+/*Temario dentro de curso*/
+
+.modalidadcurso {
+  display: flex;
+  width: 100vw;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+.modalidadcurso p {
+  font-size: 1.2rem;
+}
+
+.temario {
+  margin-top: 1%;
+  text-align: center;
+  padding-top: 1%;
+  background-color: white;
+  min-width: 410px;
+  border: 1px solid gainsboro;
+  -webkit-box-shadow: -5px 5px 10px #111;
+  box-shadow: -5px 5px 10px #111;
+  margin-right: 0.5%;
+}
+
+.temariouno {
+  min-width: 410px;
+}
+
+.tit {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.temariouno .btn {
+  color: aliceblue;
+}
+
+.filascursosdos {
+  margin-top: 1%;
+  -webkit-box-shadow: -5px 5px 10px #111;
+  box-shadow: -5px 5px 10px #111;
+  margin-right: 0.5%;
+}
+
+.formasdepagouno {
+  margin-top: 1%;
+  -webkit-box-shadow: -5px 5px 10px #111;
+  box-shadow: -5px 5px 10px #111;
+  margin-right: 0.5%;
+}
+
+.formasdepagotres {
+  text-align: center;
+}
+
+.formasdepagotres img {
+  margin-bottom: 15%;
+  width: 50%;
+  height: 50%;
+}
+
+/* Fin Temario dentro de curso*/
+
+/*OVEEEEEEEEEEEEEERLAAAAAAAAAAAAAAAY*/
+
+#overlaynegro {
+  z-index: 600;
+  width: 100%;
+  height: 50rem;
+  background-color: black;
+  text-align: center;
+  position: fixed;
+  display: none;
+  opacity: 95%;
+}
+
+.textooverlay {
+  width: 100%;
+  padding-top: 5%;
+  overflow: auto;
+  height: 100%;
+  color: aliceblue;
+}
+
+.botonvolveroverlay {
+  margin-top: 10%;
+}
+
+#botoneraoverlay {
+  z-index: 230;
+  width: auto;
+  height: 46rem;
+  background-color: black;
+  text-align-last: center;
+  position: fixed;
+  float: right;
+  right: 0;
+  top: 0;
+  opacity: 90%;
+}
+
+.botonesoverlay {
+  display: grid;
+  padding-top: 25%;
+  padding-left: 10%;
+}
+
+#contenedorbotoneraoverlay {
+  position: fixed;
+  z-index: 200;
+  width: 24%;
+  float: right;
+  right: 0;
+  background-color: black;
+  height: 46rem;
+  border-radius: 10px;
+  opacity: 90%;
+}
+
+#botonmenuoverlay {
+  position: fixed;
+  top: 40%;
+  margin-left: 0.5%;
+}
+
+#botonmenuoverlay h6 {
+  color: white;
+}
+
+.botonmenuoverlay {
+  width: 100%;
+}
+
+#cuerpotextooverlay {
+  margin-left: 20%;
+  max-width: 60%;
+}
+
+/*SIIIIIIIIIIIIIIIIIDEBAAAAAAAAAAAR*/
+
+/*tablets*/
+
+@media screen and (min-width: 741px) and (max-width: 1024px) {
+}
+
+/*Celulares*/
+
+@media screen and (max-width: 740px) {
+  #menu {
+    position: fixed;
+    z-index: 101;
+  }
+  .portada {
+    overflow: hidden;
+  }
+  .roww {
+    display: grid;
+    grid-column: 100vw;
+    grid-row: 20vh 20vh;
+  }
+  .grid-item {
+    width: 100vw;
+  }
+  .divbotonesslider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 700;
+  }
+
+  .botonesslider {
+    font-size: 1rem;
+    margin: 5px;
+    min-width: 150px;
+    border-style: solid;
+    -webkit-box-shadow: -5px 2px 10px #111;
+    box-shadow: -2px 2px 15px 2px #111;
+  }
+
+  .textoenslider {
+    height: 30vh;
+    z-index: 150;
+    color: darkgray;
+    font-style: italic;
+    margin-top: 30px;
+    padding-left: 30px;
+    text-shadow: -5px 5px 10px #111;
+  }
+  .portada img {
+    height: 50vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    border-radius: 100% 0% 100% 0% / 0% 72% 28% 100%;
+    -webkit-box-shadow: 5px 5px 15px #111;
+    box-shadow: 5px 5px 15px #111;
+  }
+
+  #menu ul {
+    width: 50%; /* ancho del menú, ajustar para centrarlo*/
+  }
+}

@@ -1,0 +1,32 @@
+#seccioncursosweb {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-top: 35px;
+}
+
+.card-group {
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  width: 250px;
+  text-align: center;
+  -webkit-box-shadow: -5px 5px 10px #111;
+  box-shadow: -5px 5px 15px #111;
+}
+
+.card {
+  height: 100%;
+}
+
+.masinfoweb {
+  margin-top: 10%;
+  -webkit-box-shadow: -5px 5px 10px #111;
+  box-shadow: -5px 5px 10px #111;
+}
+
+.mercadopago-button {
+  background-color: blue !important;
+}

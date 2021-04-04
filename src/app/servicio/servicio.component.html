@@ -1,0 +1,29 @@
+<section id="seccionservicios">
+  <div id="ubicacionseccionservicios" class="row rowservicios" *ngFor="let servicio of servicios">
+    <div id="liquidacion" class="card cardservicios  p-3 mb-5 bg-white rounded card mb-3 padding scrollflow -slide-top -opacity" style="width: 18rem;">
+      <div id="serviciosgiratorios" class="serviciosgiratorios" *ngIf="status">
+        <div class="precioservicios">
+          {{servicio.precio}}                         
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{servicio.titulo}}</h5>
+          <p class="card-text">{{servicio.descripcion}}.</p>
+        </div>
+        <div class="botonservicio">
+          <a class=" btn btn-primary">Mas Info</a>
+          <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+          data-preference-id="40433146-3b295b80-a608-4f7e-99ec-be5537e16f4f">
+          </script>
+        </div>
+        
+      </div>
+      <div class="serviciostrasera" *ngIf="!status">
+        <p>{{servicio.descripcion}}</p>   
+          <div class="volvergiratorio">
+            <img class="backturner" src="../../assets/img/back.png"  />  
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+                

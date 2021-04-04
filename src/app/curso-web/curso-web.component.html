@@ -1,0 +1,18 @@
+<section id="seccioncursosweb">
+    <div class="card-group" *ngFor="let curso of cursoW">
+        <div class=" shadow p-3 mb-5 bg-white card">
+            <span class="etiquetafechacurso badge badge-secondary">{{dia}} de {{mes}}</span>
+            <div class="card-body ">
+                <h4 class="card-title" >{{curso.titulo}}</h4>
+                <p class="card-text">{{curso.descripcion}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" *ngFor="let li of lis"> <img src={{li.img}} width="13px" height="15px" />{{li.titulo}}</li>
+            </ul>
+             <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+       data-preference-id="40433146-a6396b3b-a0ee-4755-8341-54e2d7bcee56">
+       </script> 
+            <a id="cursoszoom" href="curso-distancia-dp.shtml" class="btn btn-primary masinfoweb">Mas Info</a>
+        </div>                     
+    </div> 
+</section>  
